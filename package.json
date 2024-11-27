@@ -1,7 +1,7 @@
 {
   "name": "comment-cleaner",
-  "displayName": "comment-cleaner",
-  "description": "remove all comment's except //!",
+  "displayName": "Siddharth Patel",
+  "description": "Use this extension to quickly remove all AI-generated comments at once, except the important ones starting with //!, saving your time and effort.",
   "publisher": "CommentCleaner",
   "version": "0.0.7",
   "engines": {
