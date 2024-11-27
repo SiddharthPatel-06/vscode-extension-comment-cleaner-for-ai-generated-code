@@ -92,14 +92,12 @@ When you run this extension, it checks the comments in your code:
 
 ## License
 
-This project is licensed under the [**MIT License**](https://github.com/SiddharthPatel/comment-cleaner/blob/main/LICENSE).
+This project is licensed under the [**MIT License**](https://github.com/SiddharthPatel-10/vscode-extension-comment-cleaner-for-ai-generated-code/blob/main/LICENSE.md).
 
 ## Feedback & Support
 
 If you have any issues, suggestions, or feedback, feel free to reach out!
 
-Click [**here**](mailto:connectwithsiddh@gmail.com) to send me an email, or you can manually email me at:
-
-[**connectwithsiddh@gmail.com**](mailto:connectwithsiddh@gmail.com)
+Click [**here**](mailto:connectwithsiddh@gmail.com) to send me an email.
 
 I'll be happy to hear from you and help with any issues.
