@@ -3,7 +3,7 @@
   "displayName": "comment-cleaner",
   "description": "remove all comment's except //!",
   "publisher": "CommentCleaner",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.95.0"
   },
