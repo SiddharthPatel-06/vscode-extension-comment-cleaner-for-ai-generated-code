@@ -1,8 +1,8 @@
 {
   "name": "comment-cleaner",
-  "displayName": "CommentCleaner ",
+  "displayName": "CommentCleaner",
   "description": "Use this extension to quickly remove all AI-generated comments at once, except the important ones starting with //!, saving your time and effort.",
-  "publisher": "SiddharthPatel",
+  "publisher": "CommentCleaner",
   "version": "0.0.18",
   "engines": {
     "vscode": "^1.95.0"
