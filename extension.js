@@ -3,7 +3,7 @@ const vscode = require("vscode");
 function activate(context) {
   let disposable = vscode.commands.registerCommand(
     "comment-cleaner.removeComments",
-    function () {
+    async function () {
       const editor = vscode.window.activeTextEditor;
       if (!editor) return;
 
@@ -19,24 +19,10 @@ function activate(context) {
         return placeholder;
       });
 
-      const cleanedText = fullText
-        .split("\n")
-        .map((line) => {
-          if (
-            line.trim().startsWith("//!") ||
-            line.trim().startsWith("/*") ||
-            line.trim().startsWith("*")
-          ) {
-            return line;
-          }
-          return line.replace(/\/\/(?!\!).*|\/\*[^]*?\*\//g, "").trim() === ""
-            ? ""
-            : line;
-        })
-        .filter(
-          (line, index, array) => !(line === "" && array[index - 1] === "")
-        )
-        .join("\n");
+      const cleanedText = fullText.replace(
+        /\/\/(?!\!)(.*)|\/\*[^]*?\*\//g,
+        (match) => (match.startsWith("//!") ? match : "")
+      );
 
       let finalText = cleanedText;
       urls.forEach((url, index) => {
@@ -49,7 +35,9 @@ function activate(context) {
         new vscode.Range(0, 0, document.lineCount, 0),
         finalText
       );
-      vscode.workspace.applyEdit(edit);
+      await vscode.workspace.applyEdit(edit);
+
+      await vscode.commands.executeCommand("editor.action.formatDocument");
     }
   );
 
