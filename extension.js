@@ -19,15 +19,11 @@ function activate(context) {
         return placeholder;
       });
 
-      const cleanedText = fullText.replace(
-        /\/\/(?!\!)(.*)|\/\*[^]*?\*\//g,
-        (match) => {
-          if (match.startsWith("//!")) {
-            return match;
-          }
-          return "";
-        }
-      );
+      const cleanedText = fullText
+        .replace(/\/\/(?!\!)(.*)|\/\*[^]*?\*\//g, (match) =>
+          match.startsWith("//!") ? match : ""
+        )
+        .replace(/\n\s*\n/g, "\n");
 
       let finalText = cleanedText;
       urls.forEach((url, index) => {
@@ -53,4 +49,3 @@ module.exports = {
   activate,
   deactivate,
 };
-
