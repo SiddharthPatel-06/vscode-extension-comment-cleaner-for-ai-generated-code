@@ -20,10 +20,23 @@ function activate(context) {
       });
 
       const cleanedText = fullText
-        .replace(/\/\/(?!\!)(.*)|\/\*[^]*?\*\//g, (match) =>
-          match.startsWith("//!") ? match : ""
+        .split("\n")
+        .map((line) => {
+          if (
+            line.trim().startsWith("//!") ||
+            line.trim().startsWith("/*") ||
+            line.trim().startsWith("*")
+          ) {
+            return line;
+          }
+          return line.replace(/\/\/(?!\!).*|\/\*[^]*?\*\//g, "").trim() === ""
+            ? ""
+            : line;
+        })
+        .filter(
+          (line, index, array) => !(line === "" && array[index - 1] === "")
         )
-        .replace(/\n\s*\n/g, "\n");
+        .join("\n");
 
       let finalText = cleanedText;
       urls.forEach((url, index) => {
