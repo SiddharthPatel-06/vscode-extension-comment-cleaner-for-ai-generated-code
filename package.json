@@ -3,11 +3,14 @@
   "displayName": "CommentsCleaner",
   "description": "Use this extension to quickly remove all AI-generated comments at once, except the important ones starting with //!, saving your time and effort.",
   "publisher": "CommentCleaner",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "engines": {
-       "vscode": "^1.0.0"
+    "vscode": "^1.0.0"
   },
-  "categories": ["Programming Languages", "Linters"],
+  "categories": [
+    "Programming Languages",
+    "Linters"
+  ],
   "activationEvents": [
     "onLanguage:javascript",
     "onLanguage:typescript",
@@ -52,14 +55,20 @@
       }
     ]
   },
-  "keywords": ["comment cleaner", "remove comments", "ai comments", "clean code", "code comments"],
+  "keywords": [
+    "comment cleaner",
+    "remove comments",
+    "ai comments",
+    "clean code",
+    "code comments"
+  ],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode":  "^1.0.0",
+    "@types/vscode": "^1.0.0",
     "@types/mocha": "^10.0.9",
     "@types/node": "20.x",
     "eslint": "^9.13.0",
