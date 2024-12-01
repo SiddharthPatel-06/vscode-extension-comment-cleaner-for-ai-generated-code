@@ -5,12 +5,37 @@
   "publisher": "CommentCleaner",
   "version": "0.0.21",
   "engines": {
-    "vscode": "^1.95.0"
+       "vscode": "^1.0.0"
   },
-  "categories": [
-    "Other"
+  "categories": ["Programming Languages", "Linters"],
+  "activationEvents": [
+    "onLanguage:javascript",
+    "onLanguage:typescript",
+    "onLanguage:json",
+    "onLanguage:html",
+    "onLanguage:css",
+    "onLanguage:markdown",
+    "onLanguage:reactnative",
+    "onLanguage:java",
+    "onLanguage:cpp",
+    "onLanguage:c",
+    "onLanguage:python",
+    "onLanguage:php",
+    "onLanguage:go",
+    "onLanguage:ruby",
+    "onLanguage:swift",
+    "onLanguage:kotlin",
+    "onLanguage:scala",
+    "onLanguage:r",
+    "onLanguage:perl",
+    "onLanguage:rust",
+    "onLanguage:lua",
+    "onLanguage:sh",
+    "onLanguage:yaml",
+    "onLanguage:xml",
+    "onLanguage:sql",
+    "onLanguage:dart"
   ],
-  "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
     "commands": [
@@ -21,19 +46,20 @@
     ],
     "keybindings": [
       {
-        "command": "extension.removeComments",
+        "command": "comment-cleaner.removeComments",
         "key": "ctrl+alt+s",
         "when": "editorTextFocus"
       }
     ]
   },
+  "keywords": ["comment cleaner", "remove comments", "ai comments", "clean code", "code comments"],
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.95.0",
+    "@types/vscode":  "^1.0.0",
     "@types/mocha": "^10.0.9",
     "@types/node": "20.x",
     "eslint": "^9.13.0",
