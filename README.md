@@ -1,111 +1,104 @@
-# Comment Cleaner Extension for VSCode
+<h1 align="center">🧹 Comment Cleaner for VSCode</h1>
+<p align="center">Effortlessly remove all comments, but keep the important ones marked with <code>//!</code></p>
 
-## What is this Extension?
+---
 
-- The **Comment Cleaner** extension for Visual Studio Code helps you easily remove comments from your code.
-- But it keeps comments that start with `//!` (for example, `//! This is important`), so you don't lose useful notes in your code.
+## What is Comment Cleaner?
 
-## Key Features:
+Tired of messy code with too many comments?
 
-- **Removes all comments**: It removes single-line comments (`// ...`) and block comments (`/* ... */`).
-- **Keeps important comments**: If a comment starts with `//!`, it will not be removed. You can use this special format for comments you want to keep.
+This VSCode extension deletes all comments from your code — but smartly **keeps** the ones you mark as important with `//!`.
 
-## How to Install the Extension?
+Removes `//` and `/* ... */` comments  
+Keeps only comments starting with `//!`  
 
-Follow these steps to install and start using **Comment Cleaner** in your Visual Studio Code:
+Clean code, made easy.
 
-### Option 1: Install from Visual Studio Code Marketplace
+---
 
-- Open **Visual Studio Code** (VSCode).
-- Go to the **Extensions Marketplace**:
-  - On the left sidebar, click on the **Extensions** icon (or press `Ctrl + Shift + X`).
-  - Search for '**Comment Cleaner**'.
-  - Click '**Install**' on the extension page.
+## Why Developers Love It
 
-### Option 2: Install from a `.vsix` file (if you have the file)
+- One-click to clean up clutter
+- Keeps the useful stuff (`//!`)
+- Works in seconds – just press a shortcut
 
-- Download the `.vsix` file for the extension.
-- Open VSCode.
-- Press `Ctrl + Shift + P` to open the command palette.
-- Type `Install from VSIX` and select it.
-- Choose the `.vsix` file you downloaded and install it.
+---
 
-## How to Use the Extension?
+## How It Works
 
-Once you've installed the extension, here's how to use it:
+### Method 1: Use Command Palette
 
-### Open Your Code:
+> Press: `Ctrl + Shift + P`  
+> Type: `Remove All Comments Except //!`  
+> Hit: **Enter**
 
-- Open any code file in VSCode (JavaScript, TypeScript, etc.).
+![Command Palette GIF](https://raw.githubusercontent.com/SiddharthPatel-10/vscode-extension-comment-cleaner-for-ai-generated-code/refs/heads/main/gifs/command-palette.gif)
 
-### Open the Command Palette:
+---
 
-- Press `Ctrl + Shift + P` on your keyboard to open the Command Palette.
+### Method 2: Use Shortcut Key
 
-### Run the Extension:
+> Just press: `Ctrl + Alt + S`  
+> Boom 💥 — Clean code!
 
-- Type '**Remove All Comments Except //!**' and select it from the list.
-- This will remove all comments, except those starting with `//!`.
+![Shortcut Demo](https://raw.githubusercontent.com/SiddharthPatel-10/vscode-extension-comment-cleaner-for-ai-generated-code/refs/heads/main/gifs/shortcut.gif)
 
-## How to Customize (Optional)
+---
 
-If you'd like to make it even easier to use the extension, you can set up a custom keyboard shortcut for it!
+## 🛠️ How to Install
 
-### Search for the Command:
+### From VSCode Marketplace
 
-- Look for "**Remove All Comments Except //!**" in the list.
+1. Open **VSCode**
+2. Go to Extensions: `Ctrl + Shift + X`
+3. Search: `CommentsCleaner`
+4. Click **Install**
 
-### Assign a Shortcut:
+### 🗂️ Install via `.vsix` File
 
-- Click the pencil icon next to the command and set your desired keyboard shortcut (e.g., `Ctrl + Shift + P`).
+1. Download `.vsix` from Releases
+2. In VSCode, open Command Palette: `Ctrl + Shift + P`
+3. Select: `Install from VSIX`
+4. Choose the file → Done!
 
-## Keyboard Shortcut
+---
 
-- Press `Ctrl + Shift + P` to open the Command Palette in VSCode.
-- Select Remove All Comments Except //! in the search box.
-- Click on the command that appears at the top (it should be Remove All Comments Except //!).
-- This will automatically remove all comments except those starting with //!.
+## How to Use
 
-## Why Use This Extension?
+- Open any code file
+- Press shortcut or use command
+- Comments are removed — except the ones you really care about (`//!`)
 
-- **Save Time**: Quickly clean up your code by removing unnecessary comments.
-- **Keep Important Comments**: Don't worry about losing valuable comments that start with `//!`.
-- **Easy to Use**: Just a few clicks or a keyboard shortcut to make your code neat and clean.
-
-## How Does It Work?
-
-When you run this extension, it checks the comments in your code:
-
-- It removes regular comments like `//` and `/* */`.
-- It keeps comments that begin with `//!`, so you can mark important ones.
+---
 
 ## Troubleshooting
 
-### Extension not showing up?
+### Not working?
 
-- Try restarting VSCode.
-- Make sure the extension is installed properly.
+- Restart VSCode
+- Make sure it's installed correctly
 
-### Not removing comments?
+### Accidentally deleted important comments?
 
-- Make sure you are using `//!` for comments you want to keep.
+- Only `//!` is preserved — use that!
 
-## License
+---
 
-This project is licensed under the [MIT License](https://github.com/SiddharthPatel-10/vscode-extension-comment-cleaner-for-ai-generated-code/blob/main/LICENSE.md).
+## 💬 Feedback & Love Letters
 
-## Feedback & Support
+Mail: [connectwithsiddh@gmail.com](mailto:connectwithsiddh@gmail.com)
 
-If you have any issues, suggestions, or feedback, feel free to reach out!
+I'd love to hear from you ❤️
 
-[connectwithsiddh@gmail.com](mailto:connectwithsiddh@gmail.com)
-
-I'll be happy to hear from you and help with any issues.
+---
 
 ## Connect with Me
 
 - **GitHub**: [Explore my Projects](https://github.com/SiddharthPatel-10)
 - **LinkedIn**: [Let's Connect on LinkedIn](https://www.linkedin.com/in/siddharth-patel-b1ba53270/)
 
-I'm always open to collaborating and discussing new ideas!
+---
 
+## 📄 License
+
+Licensed under the [MIT License](./LICENSE.md)
