@@ -3,7 +3,7 @@
   "displayName": "CommentsCleaner",
   "description": "Use this extension to quickly remove all AI-generated comments at once, except the important ones starting with //!, saving your time and effort.",
   "publisher": "CommentCleaner",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "engines": {
     "vscode": "^1.0.0"
   },
@@ -74,5 +74,9 @@
     "eslint": "^9.13.0",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1"
+  },
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/SiddharthPatel-10/vscode-extension-comment-cleaner-for-ai-generated-code.git"
   }
 }
