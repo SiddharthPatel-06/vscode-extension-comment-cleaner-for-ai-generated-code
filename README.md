@@ -86,7 +86,7 @@ Clean code, made easy.
 
 ## 💬 Feedback & Love Letters
 
-Mail: [connectwithsiddh@gmail.com](mailto:connectwithsiddh@gmail.com)
+Mail: [heycodewithsid@gmail.com](mailto:heycodewithsid@gmail.com)
 
 I'd love to hear from you ❤️
 
@@ -94,7 +94,7 @@ I'd love to hear from you ❤️
 
 ## Connect with Me
 
-- **GitHub**: [Explore my Projects](https://github.com/SiddharthPatel-10)
+- **GitHub**: [Explore my Projects](https://github.com/SiddharthPatel-06)
 - **LinkedIn**: [Let's Connect on LinkedIn](https://www.linkedin.com/in/siddharth-patel-b1ba53270/)
 
 ---
