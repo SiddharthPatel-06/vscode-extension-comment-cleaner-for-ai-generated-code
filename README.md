@@ -94,8 +94,9 @@ I'd love to hear from you ❤️
 
 ## Connect with Me
 
-- **GitHub**: [Explore my Projects](https://github.com/SiddharthPatel-06)
-- **LinkedIn**: [Let's Connect on LinkedIn](https://www.linkedin.com/in/siddharth-patel-b1ba53270/)
+- <a href="https://www.linkedin.com/in/siddharth-patel-b1ba53270/" target="_blank">LinkedIn</a>
+- <a href="https://x.com/Siddharth0693" target="_blank">Twitter</a>
+- <a href="https://siddharth-genai.vercel.app/" target="_blank">Portfolio</a>
 
 ---
 
